@@ -1,11 +1,3 @@
-/*
-==============================================
-File        : mid.cpp
-Description : Middleware Engine
-Purpose     : Process requests before execution
-==============================================
-*/
-
 #include <iostream>
 #include <string>
 
