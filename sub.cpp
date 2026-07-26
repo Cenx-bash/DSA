@@ -1,11 +1,3 @@
-/*
-==================================================
-File        : sub.cpp
-Description : Core Subsystem
-Purpose     : Handle internal business operations
-==================================================
-*/
-
 #include <iostream>
 #include <memory>
 
