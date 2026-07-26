@@ -1,1 +1,96 @@
-. 
+DSA Notes (C++)
+
+1. Arrays
+
+Definition: Collection of same-type elements stored in contiguous
+memory. - Fixed size - Fast indexed access Time Complexity: - Access:
+O(1) - Search: O(n) - Insert: O(n) - Delete: O(n)
+
+2. Linear Search
+
+Checks each element one by one. - Best: O(1) - Average/Worst: O(n)
+
+3. Binary Search
+
+Works only on sorted arrays. - Best: O(1) - Average/Worst: O(log n)
+
+4. Bubble Sort
+
+Swaps adjacent elements until sorted. - Best: O(n) - Average/Worst:
+O(n²)
+
+5. Selection Sort
+
+Selects the smallest element each pass. - Always O(n²)
+
+6. Insertion Sort
+
+Builds a sorted portion one element at a time. - Best: O(n) - Worst:
+O(n²)
+
+7. Stack
+
+LIFO (Last In, First Out) Operations: push, pop, top, empty Push/Pop:
+O(1)
+
+8. Queue
+
+FIFO (First In, First Out) Operations: push, pop, front, back Push/Pop:
+O(1)
+
+9. Linked List
+
+Nodes connected by pointers. Advantages: - Dynamic size - Easy
+insertion/deletion Disadvantages: - No direct indexing
+
+10. Recursion
+
+A function calling itself. Requires: - Base case - Recursive case
+
+11. Merge Sort
+
+Divide and Conquer algorithm. Time Complexity: - O(n log n) Stable: Yes
+
+12. Quick Sort
+
+Partitions around a pivot. Average: O(n log n) Worst: O(n²)
+
+13. Vector
+
+Dynamic array in C++ STL. Useful functions: - push_back() - pop_back() -
+size() - clear()
+
+14. Map
+
+Stores key-value pairs. Keys are unique. Operations: - Insert: O(log
+n) - Find: O(log n) - Delete: O(log n)
+
+15. Binary Tree
+
+Each node has at most two children. Traversals: - Inorder - Preorder -
+Postorder
+
+16. DFS
+
+Depth First Search Uses recursion or stack. Time Complexity: O(V + E)
+
+17. BFS
+
+Breadth First Search Uses a queue. Time Complexity: O(V + E)
+
+18. Graph
+
+Collection of vertices and edges. Representations: - Adjacency List -
+Adjacency Matrix
+
+19. Dynamic Programming
+
+Stores solutions to overlapping subproblems. Techniques: - Memoization -
+Tabulation
+
+Big-O Cheat Sheet
+
+Array: Access O(1), Search O(n), Insert O(n), Delete O(n) Linked List:
+Access O(n), Insert/Delete O(1)* Stack: Push/Pop O(1) Queue: Push/Pop
+O(1) Binary Search: O(log n) Bubble/Selection/Insertion Sort: O(n²)
+Merge Sort: O(n log n) Quick Sort: O(n log n) average DFS/BFS: O(V + E)
