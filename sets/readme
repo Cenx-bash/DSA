@@ -1,1 +1,200 @@
-buns
+# C++ STL Set
+
+A simple guide to using the C++ Standard Template Library (STL) `set` container.
+
+## What is a Set?
+
+A `set` is an STL container that stores **unique elements** in **sorted order**. Duplicate values are automatically ignored.
+
+## Header File
+
+```cpp
+#include <set>
+```
+
+## Creating a Set
+
+```cpp
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main() {
+    set<int> numbers;
+
+    numbers.insert(10);
+    numbers.insert(20);
+    numbers.insert(30);
+
+    for (int x : numbers)
+        cout << x << " ";
+
+    return 0;
+}
+```
+
+Output
+
+```
+10 20 30
+```
+
+---
+
+## Common Functions
+
+### Insert
+
+```cpp
+numbers.insert(50);
+```
+
+### Remove
+
+```cpp
+numbers.erase(20);
+```
+
+### Find
+
+```cpp
+if (numbers.find(10) != numbers.end())
+    cout << "Found";
+```
+
+### Count
+
+```cpp
+cout << numbers.count(10);
+```
+
+Returns:
+- `1` if found
+- `0` if not found
+
+### Size
+
+```cpp
+cout << numbers.size();
+```
+
+### Empty
+
+```cpp
+if (numbers.empty())
+    cout << "Empty";
+```
+
+### Clear
+
+```cpp
+numbers.clear();
+```
+
+---
+
+## Traversing a Set
+
+```cpp
+for (int value : numbers)
+    cout << value << " ";
+```
+
+or
+
+```cpp
+for (auto it = numbers.begin(); it != numbers.end(); it++)
+    cout << *it << " ";
+```
+
+---
+
+## Example
+
+```cpp
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main() {
+
+    set<int> s;
+
+    s.insert(5);
+    s.insert(3);
+    s.insert(8);
+    s.insert(5);
+
+    for (int x : s)
+        cout << x << " ";
+
+    return 0;
+}
+```
+
+Output
+
+```
+3 5 8
+```
+
+Notice that the duplicate value `5` is stored only once.
+
+---
+
+## Time Complexity
+
+| Operation | Complexity |
+|----------|------------|
+| Insert | O(log n) |
+| Delete | O(log n) |
+| Find | O(log n) |
+| Count | O(log n) |
+| Traverse | O(n) |
+
+---
+
+## Advantages
+
+- Automatically sorts elements
+- Stores unique values only
+- Fast searching and insertion
+- Easy to use
+
+---
+
+## Disadvantages
+
+- Cannot store duplicate values
+- Slower than arrays for direct access
+- No indexing
+
+---
+
+## When to Use
+
+Use a `set` when you need:
+- Unique elements
+- Automatic sorting
+- Fast searching
+- Ordered data
+
+---
+
+## Example Applications
+
+- Removing duplicates
+- Dictionary words
+- Student IDs
+- Unique usernames
+- Mathematical sets
+
+---
+
+## Summary
+
+- Stores unique values only
+- Automatically sorts elements
+- Implemented as a balanced binary search tree
+- Insert, delete, and search are O(log n)
+- Include with `#include <set>`
