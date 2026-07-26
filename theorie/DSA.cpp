@@ -1,31 +1,46 @@
 #include <iostream>
+#include <vector>
+#include <string>
+#include <memory>
+
 using namespace std;
+
+namespace Core {
+
+class Application {
+public:
+    virtual void initialize() = 0;
+    virtual void execute() = 0;
+    virtual void shutdown() = 0;
+};
+
+}
+
+class Program : public Core::Application {
+
+public:
+
+    void initialize() override {
+
+    }
+
+    void execute() override {
+
+    }
+
+    void shutdown() override {
+
+    }
+
+};
 
 int main() {
 
-    cout << "========== COMPUTER SCIENCE THEORY ==========\n\n";
+    unique_ptr<Core::Application> app = make_unique<Program>();
 
-    cout << "1. Data Structures\n";
-    cout << "- Organizes and stores data efficiently.\n";
-    cout << "- Examples: Array, Linked List, Stack, Queue, Tree, Graph.\n\n";
-
-    cout << "2. Algorithms\n";
-    cout << "- Step-by-step procedure for solving a problem.\n";
-    cout << "- Examples: Searching, Sorting, Dynamic Programming.\n\n";
-
-    cout << "3. Time Complexity\n";
-    cout << "- O(1) Constant\n";
-    cout << "- O(log n) Logarithmic\n";
-    cout << "- O(n) Linear\n";
-    cout << "- O(n log n)\n";
-    cout << "- O(n^2)\n\n";
-
-    cout << "4. Object-Oriented Programming\n";
-    cout << "- Class\n";
-    cout << "- Object\n";
-    cout << "- Encapsulation\n";
-    cout << "- Inheritance\n";
-    cout << "- Polymorphism\n";
+    app->initialize();
+    app->execute();
+    app->shutdown();
 
     return 0;
 }
