@@ -6,12 +6,14 @@ int main() {
     string input;
     cin >> input;
 
-    bool accepted = false;
+    int state = 0;
 
-    if (input == "ab" || input == "aab")
-        accepted = true;
+    for (char c : input) {
+        if (c == '1')
+            state = 1 - state;
+    }
 
-    if (accepted)
+    if (state == 0)
         cout << "Accepted";
     else
         cout << "Rejected";
