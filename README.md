@@ -126,3 +126,5 @@ This project is available under the MIT License.
 **Author:** Karl Ancel  
 **Course:** BS Information Systems  
 **Language:** C++17 / C++20
+
+--- drop out
