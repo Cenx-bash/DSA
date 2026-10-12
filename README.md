@@ -127,4 +127,4 @@ This project is available under the MIT License.
 **Course:** BS Information Systems  
 **Language:** C++17 / C++20
 
---- drop out
+--- drop out/ medyo
